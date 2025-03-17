@@ -1,4 +1,6 @@
-public class BankAccount {
+package Bank;
+
+public abstract class BankAccount {
     final private String accountNumber;
     private String accountHolderName;
     protected double balance;
@@ -8,9 +10,8 @@ public class BankAccount {
         this.accountHolderName = accountHolderName;
         this.balance = balance;
     }
-    public abstract void calculateInterest(){
+    public abstract void calculateInterest();
 
-    }
     public void deposit(double amount){
         if (amount >= 0){
             balance += amount;
